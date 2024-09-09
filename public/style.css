@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    outline: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+:root{
+    --bgcolor-1:#f4f4f4;
+    --bgcolor-2:#fdfdfd;
+    --text-color:#000;
+    --main-color:rgb(190, 30, 110);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body{
+    background-color: var(--bgcolor-1);
+    
+}
+
+section{
+    padding: 12rem 12%;
+    min-height: 100vh;
+}
+
+ul{
+    display: flex;
+}
+
+header .container .navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 4rem 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+}
+
+.navbar .logo{
+    font-size: 2.8rem;
+    color: var(--main-color);
+    cursor: default;
+}
+
+.logo:hover{
+    transform: scale(1.3);
+}
+
+.navbar a{
+    margin-left: 4rem;
+    font-size: 2rem;
+    color: #333;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover{
+    border-bottom: 3px solid var(--main-color);
+}
+
+.home .container .home-content{
+    width: 80%;
+    margin: 7rem auto;
+    h1{
+        font-size: 5rem;
+        font-weight: 800;
+    }
+    h2{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    h3{
+        font-size: 2rem;
+        font-size: 2rem;
+        padding: 10px 0;
+    }
+    span{
+        color:var(--main-color)
+    }
+}
+
+.button{
+    margin: 2rem ;
+    background:#333;
+    padding: 10px 20px;
+    display: inline-block;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+
+.button:hover{
+    background-color: #181717;
+}
+
+.about{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem; 
+}
+
+.about .about-image{
+    margin-top: 1rem;
+}
+
+.about .about-content{
+    h1{
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+    p{
+        font-size: 1.7rem;
+        padding: 10px 0;
+        line-height: 1.7;
+    }
+}
+
+.container .project-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap:10px;
+    grid-template-areas:
+     "project1 project1 project1"
+     "project2 project2 project2";
+}
+
+.project1{
+    grid-area: project1;
+   /* background-color: #61dafb; */
+   /* background-color: var(--main-color); */
+    padding: 20px;
+    h1{
+        font-size: 4rem;
+    }
+}
+
+.project1 .project1-content{
+    h1{
+        font-size: 2.5rem;
+        color: var(--main-color);
+    }
+    p{
+        font-size: 1.7rem;
+        padding: 5px 0;
+        line-height: 1.7;
+    }
+}
+
+ .project1 .project1-images{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.9s ease-out;
+}
+
+.project1-images:hover{
+    transform: scale(1.1);
+}
+
+.project2{
+    grid-area: project2;
+   /* background-color: #61dafb; */
+    padding: 20px;
+}
+
+.project2 .project2-content{
+    h1{
+        font-size: 2.5rem;
+        color: var(--main-color);
+    }
+    p{
+        font-size: 1.7rem;
+        padding: 5px 0;
+        line-height: 1.7;
+    }
+}
+
+.project2 .project2-images{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.9s ease-out;
+}
+
+.project2-images:hover{
+    transform: scale(1.1);
+}
+
+.donate-container{
+    display: flex;
+    width: 700px;
+    margin: auto;
+    gap: 5rem;
+}
+
+.donate-content{
+    align-items: center;
+    h2{
+        font-size: 3rem;
+        margin: 2rem 0;
+    }
+    p{
+        font-size: 1.6rem;
+        padding: 2rem 0;
+        font-weight: 500;
+    }
+}
+
+.donate-form{
+    width: 500px;
+    margin: 0 0 2rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    height: 320px;
+    background-color: var(--main-color);
+    
+}
+
+#donateForm{
+    h1{
+        margin: auto;
+        font-size: 2rem;
+        color: #fff;
+    }
+}
+
+input{
+    padding: 5px;
+    margin: 1.2rem;
+    width: 300px;
+}
+
+button{
+    width:300px;
+    margin: auto;
+    padding: 5px;
+    background-color: brown;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(99, 21, 21);
+}
+
+.container #contact-form{
+    width: 500px;
+    margin: auto;
+    h1{ 
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    button{
+        margin: 2rem auto;
+    }
+}
+
+footer{
+    background-color: rgba(0,0,0,0.3);
+    ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    font-size: 1.2rem;
+    padding: 4rem 12%;
+}
+
+
