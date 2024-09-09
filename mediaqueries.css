@@ -5,4 +5,7 @@
     .container{
         max-width: 90%;
     }
+    footer{
+        font-size: 10px;
+    }
 }
