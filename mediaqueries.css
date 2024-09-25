@@ -1,11 +1,13 @@
-@media screen and (max-width:769px){
-    body{
-        background-color: aquamarine;
-    }
-    .container{
-        max-width: 90%;
-    }
-    footer{
-        font-size: 10px;
-    }
+@media(max-width:769px){
+  body{
+    background: fixed;
+    background-color: black;
+    color: white;
+    max-width: fit-content;
+  }
+  .navbar{
+   font-size: 14px;
+  }
+
+  
 }

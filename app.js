@@ -2,12 +2,12 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const port = process.env.port || 3500;
+const port = process.env.port || 3000;
 
-app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname)));
 
 app.get('/',(req,res) =>{
-   res.sendFile(__dirname,'public','/index.html');
+    res.sendFile(path.join(__dirname,'/index.html'));
 });
 
-app.listen(port,() =>console.log(`server is runnuning on port ${port}`));
+app.listen(port, () => console.log(`server running on port: ${port}`));
